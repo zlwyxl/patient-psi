@@ -16,12 +16,13 @@ import { saveChat } from '@/app/actions'
 import { SpinnerMessage, UserMessage, BotMessage } from '@/components/message'
 import { Chat } from '@/lib/types'
 import { auth } from '@/auth'
-
 import { getPrompt } from '@/app/api/getDataFromKV'
 
+const API_BASE = "https://dashscope.aliyuncs.com/compatible-mode/v1"
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY || ''
+  apiKey: process.env.OPENAI_API_KEY || '',
+  baseURL:API_BASE,
 })
 
 
@@ -46,7 +47,7 @@ async function submitUserMessage(content: string, type: string) {
   let textNode: undefined | React.ReactNode
 
   const ui = render({
-    model: 'gpt-4',
+    model: 'qwen-max',
     provider: openai,
     initial: <SpinnerMessage />,
     messages: [
