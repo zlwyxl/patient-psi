@@ -130,15 +130,15 @@ export function PatientTypeMenu({ onStartedChange, onSetPatientProfile }: Patien
         <div>
             {!isStarted ? (<div>
                 <p className="leading-normal pt-4 font-medium text-zinc-500">
-                    In this CBT session, you will talk to a client simulated by AI with a virtual patient profile. You goal is to indentify the cognitive conceptualization diagram of the client by communicating with them and using CBT skills.
+                在本次CBT会话中，您将使用虚拟患者资料与AI模拟的客户端对话。您的目标是通过与客户沟通和使用CBT技能来确定客户的认知概念化图。
                 </p>
 
                 <p className="leading-normal pt-4 font-medium text-zinc-500">
-                    We provide 5 typical client types and one plain client without any types. Please select a patient type to see the description.
+                我们提供了5种典型的客户端类型和一种没有任何类型的普通客户端。请选择患者类型以查看描述。
                 </p>
                 <div className="max-w-6xl px-0">
                     <div>
-                        <label className="block pt-4 text-sm font-medium leading-6">Please select a client type</label>
+                        <label className="block pt-4 text-sm font-medium leading-6">请选择一个客户类型</label>
                         <div className="flex items-center justify-start">
                             <div>
                                 <PatientTypeDropdownList typeList={patientTypeListValues} selectedType={selectedType} handleChoiceClick={handleChoiceClick} ></PatientTypeDropdownList>
@@ -155,7 +155,7 @@ export function PatientTypeMenu({ onStartedChange, onSetPatientProfile }: Patien
                                     <button onClick={handleStartButtonClick}
                                         className="flex h-[35px] w-[155px] items-center justify-center rounded-md bg-green-500 text-sm font-semibold text-white"
                                     >
-                                        Start conversation
+                                        开始谈话
                                     </button>
                                 </div>
                             )}

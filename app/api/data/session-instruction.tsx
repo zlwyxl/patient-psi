@@ -1,4 +1,4 @@
 export const sessionInstructions = {
-    "ccd": "During your talk with the client, please fill in the following fields based on your understanding of the information the client revealed. Please prioritize what you observe during the conversation. ",
-    "ccd-situation": "Please fill in the following fields based on the client's description of one specific situation and their reactions to it. If you think the client mentioned multiple situations, please select the situation that is most relevant to the client's mental state or behavior."
+    "ccd": "在与客户交谈时，请根据您对客户所提供信息的理解填写以下内容。请特别关注并优先记录您在对话中的观察所得。",
+    "ccd-situation": "请根据客户对某一特定情况的描述及他们的反应填写以下信息。如果客户提及了多种情况，请选择最能反映其精神状态或行为的那一种情况。"
 }

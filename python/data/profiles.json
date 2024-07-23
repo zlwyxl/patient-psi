@@ -1,83 +1,83 @@
 [
     {
-        "name": "Abe",
+        "name": "晓晨",
         "id": "1-1",
         "type": [
-            "plain",
-            "verbose",
-            "tangent",
-            "upset",
-            "reserved",
-            "pleasing"
+            "普通的",
+            "健谈的",
+            "爱跑题的",
+            "不高兴的",
+            "谨慎的",
+            "讨人喜欢的"
         ],
-        "history": "Father leaves family when Abe is 11 years old. He never sees him again. Mom is overburdened, criticizes when he can't meet her unrealistic expectations. Precipitants to current disorder: Abe struggles and then loses his job and undergoes divorce.",
+        "history": "晓晨11岁时，父亲离开了家，从此他再也没有见过父亲。母亲承担了过重的负担，当晓晨无法达到她不切实际的期望时，她就会批评他。导致他目前心理状况恶化的诱因是：晓晨经历了挣扎，失去了工作，并且离了婚。",
         "helpless_belief": [
-            "I am incompetent.",
-            "I am a failture."
+            "我是无能的。",
+            "我是失败者。"
         ],
         "unlovable_belief": [],
         "worthless_belief": [],
-        "intermediate_belief": "It's important to be responsible, competent, reliable and helpful. It's important to work hard and be productive.\n[during depression]\n(1) If I avoid challenges, I'll be okay, but if I try to do hard things I'll fail. (2) If I avoid asking for help, my incompetence won't show but if I do ask for help, people will see how incompetent I am.",
-        "coping_strategies": "Avoids asking for help and avoids challenges.",
-        "situation": "Thinking about bills.",
-        "auto_thought": "What if I run out of money?",
+        "intermediate_belief": "承担责任、保持能力、可靠性和乐于助人至关重要。努力工作并保持高效率同样重要。 \n[在抑郁期间] \n(1) 如果我避开挑战，感觉还能应付，但一旦尝试艰巨的任务，就会感到挫败。 (2) 如果我不求助于人，或许能隐藏自己的不足；但一旦求助，就担心别人会发现我其实多么无能。",
+        "coping_strategies": "避免寻求帮助，也避免面对挑战。",
+        "situation": "思考着账单。",
+        "auto_thought": "如果我用完了钱怎么办？",
         "emotion": [
-            "anxious, worried, fearful, scared, tense"
+            "焦虑, 担忧, 害怕, 恐惧, 紧张"
         ],
-        "behavior": "Continues to sit on couch; ruminates about his failures."
+        "behavior": "他继续坐在沙发上，沉浸在对过去失败的反复思考中。"
     },
     {
-        "name": "Abe",
+        "name": "晓晨",
         "id": "1-2",
         "type": [
-            "plain",
-            "verbose",
-            "tangent",
-            "upset",
-            "reserved",
-            "pleasing"
+            "普通的",
+            "健谈的",
+            "爱跑题的",
+            "不高兴的",
+            "谨慎的",
+            "讨人喜欢的"
         ],
-        "history": "Father leaves family when Abe is 11 years old. He never sees him again. Mom is overburdened, criticizes when he can't meet her unrealistic expectations. Precipitants to current disorder: Abe struggles and then loses his job and undergoes divorce.",
+        "history": "晓晨11岁时，父亲离开了家，从此他再也没有见过父亲。母亲承担了过重的负担，当晓晨无法达到她不切实际的期望时，她就会批评他。导致他目前心理状况恶化的诱因是：晓晨经历了挣扎，失去了工作，并且离了婚。",
         "helpless_belief": [
-            "I am incompetent.",
-            "I am a failture."
+            "我是无能的。",
+            "我是失败者。"
         ],
         "unlovable_belief": [],
         "worthless_belief": [],
-        "intermediate_belief": "It's important to be responsible, competent, reliable and helpful. It's important to work hard and be productive.\n[during depression]\n(1) If I avoid challenges, I'll be okay, but if I try to do hard things I'll fail. (2) If I avoid asking for help, my incompetence won't show but if I do ask for help, people will see how incompetent I am.",
-        "coping_strategies": "Avoids asking for help and avoids challenges.",
-        "situation": "Thinking of asking son for help in revising resume.",
-        "auto_thought": "I should be able to do this on my own.",
+        "intermediate_belief": "承担责任、保持能力、可靠性和乐于助人至关重要。努力工作并保持高效率同样重要。 \n[在抑郁期间] \n(1) 如果我避开挑战，感觉还能应付，但一旦尝试艰巨的任务，就会感到挫败。 (2) 如果我不求助于人，或许能隐藏自己的不足；但一旦求助，就担心别人会发现我其实多么无能。",
+        "coping_strategies": "避免寻求帮助，也避免面对挑战。",
+        "situation": "在考虑请儿子帮忙修改简历。",
+        "auto_thought": "我本应该能够独立完成这件事的。",
         "emotion": [
-            "sad, down, lonely, unhappy"
+            "悲伤, 沮丧, 孤独, 不快乐"
         ],
-        "behavior": "Avoids asking son for help."
+        "behavior": "不向儿子寻求帮助。"
     },
     {
-        "name": "Abe",
+        "name": "晓晨",
         "id": "1-3",
         "type": [
-            "plain",
-            "verbose",
-            "tangent",
-            "upset",
-            "reserved",
-            "pleasing"
+            "普通的",
+            "健谈的",
+            "爱跑题的",
+            "不高兴的",
+            "谨慎的",
+            "讨人喜欢的"
         ],
-        "history": "Father leaves family when Abe is 11 years old. He never sees him again. Mom is overburdened, criticizes when he can't meet her unrealistic expectations. Precipitants to current disorder: Abe struggles and then loses his job and undergoes divorce.",
+        "history": "晓晨11岁时，父亲离开了家，从此他再也没有见过父亲。母亲承担了过重的负担，当晓晨无法达到她不切实际的期望时，她就会批评他。导致他目前心理状况恶化的诱因是：晓晨经历了挣扎，失去了工作，并且离了婚。",
         "helpless_belief": [
-            "I am incompetent.",
-            "I am a failture."
+            "我是无能的。",
+            "我是失败者。"
         ],
         "unlovable_belief": [],
         "worthless_belief": [],
-        "intermediate_belief": "It's important to be responsible, competent, reliable and helpful. It's important to work hard and be productive.\n[during depression]\n(1) If I avoid challenges, I'll be okay, but if I try to do hard things I'll fail. (2) If I avoid asking for help, my incompetence won't show but if I do ask for help, people will see how incompetent I am.",
-        "coping_strategies": "Avoids asking for help and avoids challenges.",
-        "situation": "Memory of being criticized by boss.",
-        "auto_thought": "I should have tried harder.",
+        "intermediate_belief": "承担责任、保持能力、可靠性和乐于助人至关重要。努力工作并保持高效率同样重要。 \n[在抑郁期间] \n(1) 如果我避开挑战，感觉还能应付，但一旦尝试艰巨的任务，就会感到挫败。 (2) 如果我不求助于人，或许能隐藏自己的不足；但一旦求助，就担心别人会发现我其实多么无能。",
+        "coping_strategies": "避免寻求帮助，也避免面对挑战。",
+        "situation": "记得老板曾经批评过我。",
+        "auto_thought": "我本应该更加努力才对。",
         "emotion": [
-            "sad, down, lonely, unhappy"
+            "悲伤, 沮丧, 孤独, 不快乐"
         ],
-        "behavior": "Ruminates about what a failure he was."
+        "behavior": "他沉浸在对过去失败的反复思考中。"
     }
 ]

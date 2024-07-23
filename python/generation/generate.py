@@ -32,30 +32,35 @@ def generate_chain(transcript_file, out_file):
     with open(os.path.join(data_path, transcript_file), 'r') as f:
         lines = f.readlines()
 
-    query = "Based on the therapy session transcript, summarize the patient's personal history following the below instructions. Not that `Client` means the patient in the transcript.\n\n{lines}".format(
+    query = "根据治疗记录，按照以下说明总结患者的个人病史。“客户”并不是指记录中的患者。.\n\n{lines}".format(
         lines=lines)
-
+ 
     pydantic_parser = PydanticOutputParser(
         pydantic_object=GenerationModel.CognitiveConceptualizationDiagram)
-
+ 
     _input = GenerationModel.prompt_template.invoke({
         "query": query,
         "format_instructions": pydantic_parser.get_format_instructions()
     })
+    print(_input)
+   
     llm = ChatOpenAI(
-        model=os.getenv('GENERATOR_MODEL'),
-        temperature=os.getenv('GENERATOR_MODEL_TEMP'),
-        max_retries=2,
+        api_key=os.getenv("OPENAI_API_KEY"), # 如果您没有配置环境变量，请在此处用您的API Key进行替换
+        base_url=os.getenv("BASE_URL"),
+        model=os.getenv("GENERATOR_MODEL")
     )
     attempts = 0
-
+    response = llm.invoke(_input)
+    # print(response.content)
+    # exit()
+    # print("111111")
     while attempts < int(os.getenv('MAX_ATTEMPTS')):
         _output = pydantic_parser.parse(
-            llm.invoke(_input).content).model_dump()
+            response.content).model_dump()
         print(_output)
         if is_json_serializable(_output):
-            with open(os.path.join(out_path, out_file), 'w') as f:
-                f.write(json.dumps(_output, indent=4))
+            with open(os.path.join(out_path, out_file), 'w', encoding='utf-8') as f:
+                f.write(json.dumps(_output, indent=4, ensure_ascii=False))
             logger.info(f"Output successfully written to {out_file}")
             break
         else:

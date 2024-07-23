@@ -1,39 +1,39 @@
 export const helplessBeliefItems = [
     {
         id: "incompetent",
-        label: "I am incompetent.",
+        label: "我感到自己很无能。",
     },
     {
         id: "helpless",
-        label: "I am helpless.",
+        label: "我感到无助。",
     },
     {
         id: "powerless",
-        label: "I am powerless, weak, vulnerable.",
+        label: "我感到自己毫无力量，软弱，且脆弱。",
     },
     {
         id: "victim",
-        label: "I am a victim.",
+        label: "我感觉自己是一个受害者。",
     },
     {
         id: "needy",
-        label: "I am needy.",
+        label: "我感到自己很需要帮助。",
     },
     {
         id: "trapped",
-        label: "I am trapped.",
+        label: "我被困住了。",
     },
     {
         id: "control",
-        label: "I am out of control.",
+        label: "我失控了。",
     },
     {
         id: "failure",
-        label: "I am a failure, loser.",
+        label: "我是一个失败者，一个输家。",
     },
     {
         id: "defective",
-        label: "I am defective.",
+        label: "我有缺陷。",
     }
 ];
 
@@ -41,45 +41,45 @@ export const helplessBeliefItems = [
 export const unlovableBeliefItems = [
     {
         id: "unlovable",
-        label: "I am unlovable.",
+        label: "我不值得被爱。",
     },
     {
         id: "unattractive",
-        label: "I am unattractive.",
+        label: "我没有吸引力。",
     },
     {
         id: "undesirable",
-        label: "I am undesirable, unwanted.",
+        label: "我不受欢迎，没人要。",
     },
     {
         id: "rejected",
-        label: "I am bound to be rejected.",
+        label: "我注定会被拒绝。",
     },
     {
         id: "abandoned",
-        label: "I am bound to be abandoned.",
+        label: "我注定会被抛弃。",
     },
     {
         id: "alone",
-        label: "I am bound to be alone.",
+        label: "我注定会孤独。",
     }
 ];
 
 export const worthlessBeliefItems = [
     {
         id: "worthless",
-        label: "I am worthless, waste.",
+        label: "我毫无价值，是个废物。",
     },
     {
         id: "immoral",
-        label: "I am immoral.",
+        label: "我不道德。",
     },
     {
         id: "bad",
-        label: "I am bad - dangerous, toxic, evil.",
+        label: "我是一个坏人 - 危险、恶毒、邪恶。",
     },
     {
         id: "deserve",
-        label: "I don't deserve to live.",
+        label: "我不配活着。",
     }
 ];

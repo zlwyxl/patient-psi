@@ -1,39 +1,39 @@
 export const emotionItems = [
     {
         id: "anxious",
-        label: "anxious, worried, fearful, scared, tense",
+        label: "焦虑, 担忧, 害怕, 恐惧, 紧张",
     },
     {
         id: "sad",
-        label: "sad, down, lonely, unhappy",
+        label: "悲伤, 沮丧, 孤独, 不快乐",
     },
     {
         id: "angry",
-        label: "angry, mad, irritated, annoyed",
+        label: "生气, 疯狂, 恼怒, 烦恼",
     },
     {
         id: "ashamed",
-        label: "ashamed, embarrassed, humiliated",
+        label: "羞愧, 尴尬, 羞辱",
     },
     {
         id: "disappointed",
-        label: "disappointed",
+        label: "失望",
     },
     {
         id: "jealous",
-        label: "jealous, envious",
+        label: "嫉妒, 羡慕",
     },
     {
         id: "guilty",
-        label: "guilty",
+        label: "内疚",
     },
     {
         id: "hurt",
-        label: "hurt",
+        label: "受伤",
     },
     {
         id: "Suspicious",
-        label: "suspicious",
+        label: "怀疑的",
     },
 ]
 

@@ -36,9 +36,9 @@ export function ChatPanel({
 
   const exampleMessages = [
     {
-      heading: 'Example greeting message:',
-      subheading: 'How are you feeling today?',
-      message: `How are you feeling today?`
+      heading: '问候信息示例:',
+      subheading: '你今天感觉怎么样?',
+      message: `你今天感觉怎么样?`
     }
   ]
   // const exampleMessages: any[] = []

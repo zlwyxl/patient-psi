@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react'
 import { useUIState, useAIState } from 'ai/rsc'
 import { Session } from '@/lib/types'
 import { usePathname, useRouter } from 'next/navigation'
-import { Message } from '@/lib/chat/actions'
+import { Message } from 'ai'
 import { useScrollAnchor } from '@/lib/hooks/use-scroll-anchor'
 import { toast } from 'sonner'
 import { StartSession } from './start-session'
@@ -108,23 +108,23 @@ export function Chat({ id, className, session, missingKeys }: ChatProps) {
                   <div className="mx-auto max-w-2xl px-4">
                     <div className="flex flex-col gap-2 rounded-lg border bg-background p-8">
                       <h1 className="text-xl font-semibold">
-                        New Session Begins
+                        开始新对话
                       </h1>
                       <label className="leading-normal pt-4 text-lg font-semibold text-blue-600">
-                        Relevant history of {patientProfile.name}:
+                       相关历史 {patientProfile.name}:
                       </label>
                       <p className="leading-normal pt-2 font-medium text-blue-600">
                         {patientProfile.history}
                       </p>
                       <p className="leading-normal pt-1 font-light text-black dark:text-white">
-                        (The relevant history will be shown in the right column throughout the session)
+                        (相关的历史记录将在整个会议期间显示在右边的栏中)
                       </p>
                       <p className="leading-normal pt-4 font-medium text-black dark:text-white">
-                        Now you may start your session with client <b>{patientProfile.name}</b>.
-                        Please start the session by entering the first greeting to <b>{patientProfile.name}</b> in the textbox below.
+                        现在你可以开始和 <b>{patientProfile.name}</b>谈话了.
+                        请在下面的文本框中。对<b>{patientProfile.name}</b>输入第一个问候语开始对话
                       </p>
                       <label className="block pt-1 leading-normal font-medium text-red-500">
-                        <span className="font-bold">The expected time of the session is around 10 minutes.</span>
+                        <span className="font-bold">对话时间为10分钟。</span>
                       </label>
                     </div>
                   </div>

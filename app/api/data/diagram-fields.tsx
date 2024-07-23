@@ -1,13 +1,13 @@
 export const diagramDescriptionMapping: { [key: string]: string } = {
-    'relatedHistory': 'Please capture important background information about the client, such as significant life events or circumstances that may have contributed to their current mental state or behavior.',
-    'coreBelief': 'Please select any core beliefs that match the your understanding of the client under the following three categories: Hopeless, Unlovable, and Worthless Core beliefs.',
-    'intermediateBelief': 'Please identify the client\'s intermediate beliefs that influence their perception of themselves, others, and the world around them.',
-    'intermediateBeliefDepression': 'Please identify how the client\'s intermediate beliefs change and become more negative during episodes of depression, if applicable',
-    'copingStrategies': 'Please describe the client\'s coping strategies in managing the emotions',
-    'situation': 'Please record the specific situation or trigger that the client recently encountered, which led to negative automatic thoughts and emotional distress.',
-    'autoThought': 'Please record the client\'s immediate, unfiltered thoughts that arise in response to the identified situation.',
-    'emotion': 'Please select any emotions experienced by the client in relation to the situation and their automatic thoughts.',
-    'behavior': 'Please describe the client\'s behavioral responses and actions taken as a result of their automatic thoughts and emotions in the given situation.',
+    'relatedHistory': '请记录客户的重要背景信息，例如可能影响他们目前精神状态或行为的重要生活事件或环境。',
+    'coreBelief': '请根据你对客户的理解，在无能、不可爱、和无价值这三个核心信念类别中选择任何符合的核心信念。',
+    'intermediateBelief': '请确定影响客户对自己、他人和周围世界看法的中间信念。',
+    'intermediateBeliefDepression': '如果适用，请确定客户在抑郁发作期间中间信念如何变得更加消极。',
+    'copingStrategies': '请阐述客户在处理情绪时所采取的应对方法。',
+    'situation': '请记下客户最近遇到的具体情境或触发因素，这引发了消极的自动思维和情绪困扰。',
+    'autoThought': '请记下客户对已确定情境的即时、未加掩饰的思考。',
+    'emotion': '请选择客户在当前情境中体验到的任何情绪，以及他们自动产生的想法。',
+    'behavior': '请描述客户在给定情境中，受自动思维和情绪影响而表现出的行为反应。',
 };
 
 export const diagramTitleMapping: { [key: string]: string } = {

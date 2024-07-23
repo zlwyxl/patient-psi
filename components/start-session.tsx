@@ -60,7 +60,7 @@ export function StartSession({ onStartedChange, onSetPatientProfile }: StartSess
         <div className="mx-auto max-w-2xl px-4">
             <div className="flex flex-col gap-2 rounded-lg border bg-background p-8">
                 <h1 className="text-xl font-semibold">
-                    CBT session with a simulated client powered by AI
+                与人工智能支持的模拟客户端进行CBT会话                
                 </h1>
                 <PatientTypeMenu
                     onStartedChange={handleStartedChange}
