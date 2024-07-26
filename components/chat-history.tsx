@@ -15,7 +15,7 @@ export async function ChatHistory({ userId }: ChatHistoryProps) {
   return (
     <div className="flex flex-col h-full">
       <div className="flex items-center justify-between p-4">
-        <h4 className="text-sm font-medium">Chat History</h4>
+        <h4 className="text-sm font-medium">对话历史</h4>
       </div>
       <div className="mb-2 px-2">
         <Link

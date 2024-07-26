@@ -11,15 +11,15 @@ export const diagramDescriptionMapping: { [key: string]: string } = {
 };
 
 export const diagramTitleMapping: { [key: string]: string } = {
-    'relatedHistory': 'Relevant History',
-    'coreBelief': 'Core Belief(s)',
-    'intermediateBelief': 'Intermediate Belief(s)',
-    'intermediateBeliefDepression': 'Intermediate Belief (s) During Depression',
-    'copingStrategies': 'Coping Strategies',
-    'situation': 'The Situation',
-    'autoThought': 'Automatic Thoughts(s)',
-    'emotion': 'Emotion(s)',
-    'behavior': 'Behavior(s)',
+    'relatedHistory': '相关的历史',
+    'coreBelief': '核心信念',
+    'intermediateBelief': '中间信念',
+    'intermediateBeliefDepression': '抑郁症期间的中间信念',
+    'copingStrategies': '应对策略',
+    'situation': '情境',
+    'autoThought': '无意识的思想',
+    'emotion': '情感',
+    'behavior': '行为',
 }
 
 export const diagramRelated: string[] = ['coreBelief', 'intermediateBelief', 'copingStrategies']

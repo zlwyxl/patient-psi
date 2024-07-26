@@ -213,11 +213,11 @@ export function DiagramList({ userId, chatId }: DiagramListProps) {
         <div className="flex flex-col h-full">
 
             <div className="flex items-center justify-between p-4 px-5">
-                <h4 className="text-lg font-bold">Patient Intake and Cognitive Conceptualization Diagram</h4>
+                <h4 className="text-lg font-bold">患者初诊与认知概念化模型</h4>
             </div>
             <div className="mb-2 px-5 space-y-6 overflow-auto">
                 <label className="block pt-1 leading-normal font-medium">
-                    <span className="font-bold">Patient Type: {patientType}</span>
+                    <span className="font-bold">患者类型: {patientType}</span>
                 </label>
                 <div className='-mb-4'>
                     <label className="block text-base font-bold text-blue-600">{diagramTitleMapping["relatedHistory"]}:</label>
@@ -226,10 +226,10 @@ export function DiagramList({ userId, chatId }: DiagramListProps) {
                     {savedCCDTruth?.relatedHistory}
                 </p>
                 <label className="block pt-1 leading-normal font-medium text-red-500">
-                    <span className="font-bold">The expected time of the session is around 10 minutes.</span>
+                    <span className="font-bold">谈话时间为10分钟</span>
                 </label>
                 <label className="block pt-1 leading-normal font-medium">
-                    <span className="font-bold">Instructions: </span>{sessionInstructions["ccd-situation"]}
+                    <span className="font-bold">任务: </span>{sessionInstructions["ccd-situation"]}
                 </label>
                 {diagramCCD.map(name => (
                     <div key={name}>
@@ -243,7 +243,7 @@ export function DiagramList({ userId, chatId }: DiagramListProps) {
                                     <div className="flex flex-col items-start space-y-2 mt-2" key={category}>
                                         <CheckboxReactHookFormMultiple key={`${category}-${index}`} category={category} onCheckboxChange={handleCheckboxChange} checkboxValues={inputValues[`checked${category}`] as []} />
                                         {isSubmitted && <label className="block leading-normal font-medium text-blue-600">
-                                            <span className="font-bold">Reference:</span>
+                                            <span className="font-bold">任务:</span>
                                             {
                                                 savedCCDTruth?.['Emotion']?.map((item: string, index: number) => (
                                                     <div key={index} className="pt-1 leading-normal text-blue-600">
@@ -264,7 +264,7 @@ export function DiagramList({ userId, chatId }: DiagramListProps) {
 
                             {isSubmitted && (
                                 <label key={name} className="block pt-1 leading-normal font-medium text-blue-600">
-                                    <span className="font-bold">Reference: </span>{savedCCDTruth?.[name]}
+                                    <span className="font-bold">任务: </span>{savedCCDTruth?.[name]}
                                 </label>
                             )}
                         </div>)}
@@ -272,7 +272,7 @@ export function DiagramList({ userId, chatId }: DiagramListProps) {
                 ))}
                 <hr className="my-4 border-gray-300" />
                 <label className="block leading-normal pt-4 font-medium">
-                    <span className="font-bold">Instructions: </span> {sessionInstructions["ccd"]}
+                    <span className="font-bold">任务: </span> {sessionInstructions["ccd"]}
                 </label>
                 {diagramRelated.map(name => (
                     <div key={name}>
@@ -286,9 +286,9 @@ export function DiagramList({ userId, chatId }: DiagramListProps) {
                                     <div className="flex flex-col items-start space-y-2 mt-2" key={category}>
                                         <CheckboxReactHookFormMultiple key={`${category}-${index}`} category={category} onCheckboxChange={handleCheckboxChange} checkboxValues={inputValues[`checked${category}`] as []} />
                                         {isSubmitted && <label className="block leading-normal font-medium text-blue-600">
-                                            <span className="font-bold">Reference:</span>
+                                            <span className="font-bold">参考:</span>
                                             {savedCCDTruth?.[category]?.length === 0 ? (
-                                                <div className="pt-1 leading-normal text-blue-600">not chosen</div>
+                                                <div className="pt-1 leading-normal text-blue-600">没有选中</div>
                                             ) : (
                                                 savedCCDTruth?.[category]?.map((item: string, index: number) => (
                                                     <div key={index} className="pt-1 leading-normal text-blue-600">
@@ -310,7 +310,7 @@ export function DiagramList({ userId, chatId }: DiagramListProps) {
 
                                 {isSubmitted && (
                                     <label key={name} className="block pt-1 leading-normal font-medium text-blue-600">
-                                        <span className="font-bold">Reference: </span>{savedCCDTruth?.[name]}
+                                        <span className="font-bold">参考: </span>{savedCCDTruth?.[name]}
                                     </label>
                                 )}
                             </div>)
@@ -324,7 +324,7 @@ export function DiagramList({ userId, chatId }: DiagramListProps) {
                     className="text-sm font-semiboldflex h-[35px] w-[220px] items-center justify-center rounded-md bg-red-500 text-sm font-semibold text-white"
                     onClick={handleSubmit}
                 >
-                    Submit and review answers
+                    提交并审阅答案
                 </button>
             </div>
         </div>

@@ -74,7 +74,7 @@ interface PatientTypeMenuProps {
 export function PatientTypeMenu({ onStartedChange, onSetPatientProfile }: PatientTypeMenuProps) {
     const patientTypeListValues: string[] = patientTypes.map(({ type }) => type);
 
-    const [selectedType, setSelectedType] = useState('Client Types');
+    const [selectedType, setSelectedType] = useState('患者类型');
     const [selectedTypeDescription, setSelectedTypeDescription] = useState('');
     const [isStarted, setIsStarted] = useState(false);
     const [patientProfile, setPatientProfile] = useState<PatientProfile>(initialProfile);
@@ -120,7 +120,7 @@ export function PatientTypeMenu({ onStartedChange, onSetPatientProfile }: Patien
             }
             fetchPatientProfile(setIsStarted, setPatientProfile);
         } else {
-            alert('Please select a valid patient type.');
+            alert('请选择一个有效的患者类型');
         }
 
     }

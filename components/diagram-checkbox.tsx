@@ -63,7 +63,12 @@ export function CheckboxReactHookFormMultiple({ category, onCheckboxChange, chec
     const form = useForm<z.infer<typeof FormSchema>>({
         resolver: zodResolver(FormSchema)
     })
-
+    function formatCategory(category: string) {
+        if (category === "Helpless") return "无助的"
+        if (category === "Unlovable") return "无爱的"
+        if (category === "Worthless") return "无价值的"
+        return " 核心信念"
+    }
     function onSubmit(data: z.infer<typeof FormSchema>) {
         // toast({
         //     title: "You submitted the following values:",
@@ -85,12 +90,12 @@ export function CheckboxReactHookFormMultiple({ category, onCheckboxChange, chec
                 className="w-[350px] space-y-2 mb-4">
                 <div className="flex items-center space-x-1 px-0">
                     <div className="rounded-md border px-2 py-3 text-sm font-semibold">
-                        Expand to select <span className="underline"> {category === "Emotion" ? "emotions" : category + " Core Beliefs"} </span>
+                        选择 <span className="underline"> {category === "Emotion" ? "情绪" : formatCategory(category) + " 核心信念"} </span>
                     </div>
                     <CollapsibleTrigger asChild>
                         <Button variant="ghost" size="sm" className="w-9 p-0 hover:bg-gray-200">
                             <ChevronsUpDown className="h-5 w-5" />
-                            <span className="sr-only">Toggle</span>
+                            <span className="sr-only">切换</span>
                         </Button>
                     </CollapsibleTrigger>
 
@@ -107,7 +112,7 @@ export function CheckboxReactHookFormMultiple({ category, onCheckboxChange, chec
                                         <div className="mb-3">
                                             {/* <FormLabel className="block text-sm font-medium mb-1">{category} Core Beliefs</FormLabel> */}
                                             <FormDescription>
-                                                {category == 'Emotion' ? 'Select one or more emotions' : 'Select one or more beliefs'}
+                                                {category == 'Emotion' ? '选择一个或多个情绪' : '选择一个或多个信念'}
                                             </FormDescription>
                                         </div>
                                         {coreBeliefMapping[category].map((item) => (
