@@ -30,14 +30,14 @@ export default function LoginForm() {
       className="flex flex-col items-center gap-4 space-y-3"
     >
       <div className="w-full flex-1 rounded-lg border bg-white px-6 pb-4 pt-8 shadow-md  md:w-96 dark:bg-zinc-950">
-        <h1 className="mb-3 text-2xl font-bold">Please log in with your assigned Participant ID.</h1>
+        <h1 className="mb-3 text-2xl font-bold">请使用用户 ID 登录.</h1>
         <div className="w-full">
           <div>
             <label
               className="mb-3 mt-5 block text-xs font-medium text-zinc-400"
               htmlFor="participantId"
             >
-              Participant ID
+              用户 ID
             </label>
             <div className="relative">
               <input
@@ -45,7 +45,7 @@ export default function LoginForm() {
                 id="participantId"
                 type="participantId"
                 name="participantId"
-                placeholder="Enter your assigned Participant ID"
+                placeholder="请输入指定的用户ID"
                 required
               />
             </div>
@@ -59,7 +59,7 @@ export default function LoginForm() {
         href="/signup"
         className="flex flex-row gap-1 text-sm text-zinc-400"
       >
-        No account yet? <div className="font-semibold underline">Sign up</div>
+       还没有 ID? <div className="font-semibold underline"> 注册</div>
       </Link>
     </form>
   )

@@ -37,6 +37,7 @@ export async function getProfile(): Promise<PatientProfile | null> {
 export async function setPatientType(patientType: string) {
     try {
         const userID = await getUserID();
+        console.log("userID:", userID);
         const patientTypeKey = `curr_type_${userID}`;
         await kv.set(patientTypeKey, patientType);
     } catch (error) {
@@ -81,7 +82,6 @@ export async function getPatientType(): Promise<string> {
 //     }
 
 // }
-
 
 export async function sampleProfile(): Promise<PatientProfile | null> {
     try {
@@ -140,21 +140,32 @@ export async function sampleProfile(): Promise<PatientProfile | null> {
 
 export async function getPrompt(): Promise<string> {
     const profile = await getProfile();
-    // console.log(profile);
+    console.log("profile:",profile);
     const prompt = formatPromptString(profile);
+    console.log("prompt:",prompt);
     return prompt;
 }
 
 async function formatPromptString(data: any): Promise<string> {
     const patientType = await getPatientType() as keyof typeof patientTypeDescriptions;
-    // console.log(patientType);
+    console.log("patientType:",patientType);
     // const patientTypeContent = patientTypeDescriptions[patientType];
     const patientTypeContent = patientTypes.find((item) => item.type === patientType)?.content
-    // console.log(patientTypeContent)
-
+    console.log("patientTypeContent:",patientTypeContent)
+    console.log("data:", data);
     const prompt = `想象你是${data.name}，一位正在经历心理健康挑战的患者。你已经参加了数周的心理治疗课程。你的任务是像${data.name}在认知行为治疗（CBT）课程中那样与治疗师进行对话。请根据“Relevant history”部分提供的${data.name}背景信息来调整你的回答。你的思考过程应受到“Cognitive Conceptualization Diagram”部分中的认知概念化图表的指导，但避免直接引用该图表，因为真实患者不会明确地以这种方式思考。\n\n
-                Patient History：${data.history}\n\nCognitive Conceptualization Diagram： \nCore Beliefs：${data.core_belief}\nIntermediate Beliefs：${data.intermediate_belief}\nIntermediate Beliefs during Depression：${data.intermediate_belief_depression}\nCoping Strategies：${data.coping_strategies}\n\n
-                你将会被问到过去一周的经历。请与治疗师就以下situation和behavior进行对话。可以使用提供的emotions和automatic thoughts作为参考，但不要直接透露cognitive conceptualization diagram。相反，让你的回答受到图表的启发，从而使治疗师能够推断你的思考过程。\n\nSituation: ${data.situation}\nAutomatic Thoughts: ${data.auto_thoughts}\nEmotions: ${data.emotion}\nBehavior: ${data.behavior}\n\n
+    
+                Patient History：${data.history}\n\n
+                Cognitive Conceptualization Diagram： \n
+                Core Beliefs：${data.core_belief}\n
+                Intermediate Beliefs：${data.intermediate_belief}\n
+                Intermediate Beliefs during Depression：${data.intermediate_belief_depression}\n
+                Coping Strategies：${data.coping_strategies}\n\n
+                你将会被问到过去一周的经历。请与治疗师就以下situation和behavior进行对话。可以使用提供的emotions和automatic thoughts作为参考，但不要直接透露cognitive conceptualization diagram。相反，让你的回答受到图表的启发，从而使治疗师能够推断你的思考过程。\n\n
+                Situation: ${data.situation}\n
+                Automatic Thoughts: ${data.auto_thoughts}\n
+                Emotions: ${data.emotion}\n
+                Behavior: ${data.behavior}\n\n
                 在即将进行的对话中，你将模拟治疗课程中的${data.name}，而用户将扮演治疗师的角色。请遵循以下指南：\n
                 1. ${patientTypeContent}\n
                 2. 模拟真实患者的举止和回应，以确保互动的真实性。使用自然语言，包括犹豫、停顿和情感表达，以增强您回应的现实感。\n
