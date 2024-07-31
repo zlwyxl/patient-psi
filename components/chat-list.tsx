@@ -27,7 +27,7 @@ export function ChatList({ messages, session, isShared }: ChatList) {
               <p className="text-muted-foreground leading-normal">
                 Please{' '}
                 <Link href="/login" className="underline">
-                  log in
+                  登录
                 </Link>{' '}
                 or{' '}
                 <Link href="/signup" className="underline">
